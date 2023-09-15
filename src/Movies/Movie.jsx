@@ -17,7 +17,7 @@ function Movie() {
 				const response = await fetch('https://api.themoviedb.org/3/movie/top_rated',{
 				method: 'GET',
 				headers:{
-					'Authorization': "You put in your API Read Access Token",
+					'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlMDAzZmIyYmM5ZDE3NjhiMDZmMDAzYzUyNWM0NmMyYyIsInN1YiI6IjY0YjgyNDdjNTViMGMwMDBmZmIwZGZjZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.n0Cuf1zswhdiK3E4m5ZEdbDUimZcX8AWZWBnJC3e6WI',
 					'accept': 'application/json'
 				}
 			})

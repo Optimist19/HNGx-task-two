@@ -17,7 +17,8 @@ function CardDynamicComp() {
 
 
 	useEffect(()=>{
-		fetch(`https://api.themoviedb.org/3/movie/${param}?api_key="Your API Key will be here"&language=en-US&append_to_response=credits`)
+	
+		fetch(`https://api.themoviedb.org/3/movie/${param}?api_key=e003fb2bc9d1768b06f003c525c46c2c&language=en-US&append_to_response=credits`)
 		.then(res=> res.json())
 		.then(displayData => {
 			setMovieDetails(displayData)
