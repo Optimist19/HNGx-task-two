@@ -12,7 +12,7 @@ function CardDynamicComp() {
 	// const userDetails = data.find(user => user.id === parseInt(param))
 
 	const [movieDetails, setMovieDetails] = useState(null)
-	const [isError, setIsError] = useState(false)
+	const [isLoading, setIsLoading] = useState(true)
 	// const [movieDuration, setMovieDuration] = useState()
 
 
@@ -21,13 +21,15 @@ function CardDynamicComp() {
 		fetch(`https://api.themoviedb.org/3/movie/${param}?api_key=e003fb2bc9d1768b06f003c525c46c2c&language=en-US&append_to_response=credits`)
 		.then(res=> res.json())
 		.then(displayData => {
+			setIsLoading(false)
 			setMovieDetails(displayData)
-			setIsError(false)
+			
 		})
 		.catch(err =>{
 			// const myErr = 'Something went wrong!'
 				// setIsLoading(false)
-				setIsError(true)
+				setIsLoading(false)
+				
 				console.log(err.message)
 			
 			
@@ -42,7 +44,7 @@ function CardDynamicComp() {
 			<div className='lt'>
 				<p onClick={()=>navigate(-1)}>&lt;</p>
 			</div>
-			{isError ? <p>Something went wrong</p> :<main className='dynamic-main'>
+			{isLoading ? <h1>Loading</h1> :<main className='dynamic-main'>
 			<div>
 				<div>
 					<img src={'https://image.tmdb.org/t/p/w500/'+movieDetails?.backdrop_path} />
