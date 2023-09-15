@@ -54,7 +54,7 @@ function CardDynamicComp() {
 						<p data-testid="movie-overview">{movieDetails?.overview}</p>
 					</div>
 			
-					<p data-testid="movie-release-date">{movieDetails?.release_date}</p>
+					<p data-testid="movie-release-date">{new Date(movieDetails?.release_date).toUTCString()}</p>
 					<p>{movieDetails?.vote_average}</p>
 					<p data-testid="movie-runtime">{movieDetails?.runtime}Minutes</p>
 					<p>{movieDetails?.status}</p>
