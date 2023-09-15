@@ -1,0 +1,371 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.nav {
+  background-image: url('./assets/Poster.png');
+  height: 80vh;
+  background-size: 100% 100%;
+  color: white;
+}
+
+.nav-details {
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+
+
+.movie-input-sign-in{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.movie{
+	display: flex;
+	align-items: center;
+	gap: 0 2vw;
+}
+
+.movie p{
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.movie-input-sign-in input{
+	max-width: 35vw;
+	background-color: transparent;
+	outline: none;
+	color: white;
+	padding: 1.5vh 0;
+	font-size: 18px;
+	border-radius: 10px;
+	border-color: white;
+}
+
+  
+.movie-input-sign-in input::placeholder{
+	font-size: 16px;
+	color: white;
+	padding-left: 1vw;
+}
+
+.sign-in{
+	display: flex;
+	align-items: center;
+	gap: 0 2vw;
+}
+
+.sign-in p{
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.details {
+	width: 26vw;
+	margin-top: 10vh;
+}
+
+.details h1{
+	font-size: 44px;
+	margin: 3px 0;
+}
+
+.imdb-img-para{
+	display: flex;
+	align-items: center;
+	gap: 0 3vw;
+}
+
+.imdb-p{
+	display: flex;
+	align-self: center;
+	gap: 0 1vw;
+}
+
+.imdb-p img{
+	width: 100%;
+	object-fit: contain;
+}
+
+.berry-percent{
+	display: flex;
+	align-self: center;
+	gap: 0 1vw;
+}
+
+.berry-percent img{
+	width: 100%;
+	object-fit: contain;
+}
+
+
+.john-text p{
+	text-align: justify;
+}
+
+.movie-error{
+  display: flex;
+  justify-content: center;
+}
+
+/* cardComp */
+.feature-see-more{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2vh 0;
+}
+
+.feature-see-more h2{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.feature-see-more p{
+  color: #BE123C;
+  font-weight: bold;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  background-color: rgb(241, 241, 255);
+}
+
+a{
+  text-decoration: none;
+}
+
+.second-con{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1vh 2vw;
+}
+
+
+.berry-imdb{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.berry-imdb div{
+  display: flex;
+  gap: 0 1vw;
+  align-items: center;
+}
+
+
+
+/* .card dynamic comp */
+
+
+
+.dynamic-con .lt{
+  font-size: 50px;
+  position: fixed;
+  color: #BE123C;
+  left: 3vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dynamic-main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+
+.dynamic-comp-detail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.dynamic-comp-detail p{
+  margin: 1vh 0;
+}
+
+.dynamic-comp-detail div p{
+  width: 30vw;
+  margin: 2vh 0;
+}
+
+
+/* movie comp */
+
+.error{
+	display: flex;
+	justify-content: center;
+}
+
+.tv-spinner {
+  animation: rotate 2s linear infinite;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+/* footer */
+
+.footer-con{
+  display: flex;
+  justify-content: center;
+  background-color: #ffd9e2;
+  padding: 2vh 0;
+}
+
+.footer-con .con{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 3vh 0; */
+}
+
+.social-media{
+  display: flex;
+  align-items: center;
+  gap: 0 2vw;
+  margin: 3px 0;
+}
+
+.social-media img{
+  width: 1vw
+}
+
+.terms{
+  margin: 3px 0;
+  font-weight: bold;
+  display: flex;
+  gap: 0 3vh;
+}
+
+small{
+  margin: 3px 0;
+}
+
+@media screen and (min-width: 541px){
+
+  .sign-in{
+    gap: 0 1vw;
+  }
+  
+  .sign-in p{
+    font-size: 18px;
+  }
+
+  .details {
+    width: 45vw;
+    margin-top: 7vh;
+    margin-bottom: 2vh;
+  }
+  
+  .details h1{
+    font-size: 35px;
+    margin: 3px 0;
+  }
+
+  .john-text{
+    font-size: 20px;
+  }
+  .imdb-img-para{
+    margin: 3vh 0;
+  }
+
+  .imdb-p p{
+    font-size: 17px;
+  }
+
+  .berry-percent p{
+    font-size: 17px;
+  }
+  .nav {
+    padding-bottom: 4vh;
+  }
+
+}
+
+
+@media screen and (max-width: 540px){
+  .nav-details {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .movie p{
+    font-size: 18px;
+  }
+
+  .sign-in p{
+    font-size: 18px;
+  }
+
+  .details{
+    width: 35vw;
+    margin-bottom: 1vh;
+  }
+
+  .details h1{
+    font-size: 25px;
+    margin: 2px 0;
+  }
+
+  .imdb-img-para{
+    margin: 2vh 0;
+  }
+
+  .imdb-p p{
+    font-size: 14px;
+  }
+
+  .berry-percent p{
+    font-size: 14px;
+  }
+  
+  .john-text{
+    font-size: 14px;
+  }
+
+  .movie-error{
+    font-size: 20;
+  }
+
+  .nav {
+    padding-bottom: 2vh;
+  }
+}
+
+
+
+
