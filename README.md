@@ -6,11 +6,13 @@ The task is to consume the TMDB(https://developer.themoviedb.org/reference/intro
 
 2. You will clone this project locally to you system.
 
-3. You will use npm run dev to run it.
+3. You navigate to the folder and then run the project.
 
-4. In line 20 of the CardDynamicComp component, you will have to replace your API key in the space provided.
+4. You will use npm run dev to run it.
 
-5. In line 20 of the Movie component, you will have to replace your API Read Access Token in the space provided.
+5. In line 20 of the CardDynamicComp component, you will have to replace your API key in the space provided.
+
+6. In line 20 of the Movie component, you will have to replace your API Read Access Token in the space provided.
 
 
 
